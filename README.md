@@ -1,28 +1,26 @@
 # Questionnaire System
 
-A web-based questionnaire management system built with Vue.js on the frontend and Spring Boot for the backend. This system allows users to create, manage, and participate in various questionnaires and surveys.
+A web-based questionnaire management system that allows users to create, manage, and participate in questionnaires. Built with **Vue.js** on the frontend and **Spring Boot** on the backend.
 
 ## Features
 
-- **User Management**: Allows different user roles (e.g., admin, user) to log in and interact with the system.
-- **Questionnaire Creation**: Admins can create customizable questionnaires with various question types.
-- **Real-time Data Collection**: Collect and store responses from participants.
-- **Data Visualization**: Generate reports and visualize results from the collected data.
+- **User Authentication**: Supports user roles such as admin and participant.
+- **Questionnaire Creation**: Admins can design custom questionnaires with multiple question types.
+- **Real-Time Responses**: Collects user responses instantly.
+- **Data Visualization**: Displays collected data through visual reports and graphs.
 
 ## Tech Stack
 
 - **Frontend**: Vue.js
 - **Backend**: Spring Boot (Java)
-- **Database**: MySQL (or other relational databases)
+- **Database**: MySQL (or any relational database)
 - **Languages**: Java, JavaScript, HTML, CSS
 
 ## Prerequisites
 
-Ensure that the following are installed on your machine:
-
-- Java 11+
+- Java 11 or newer
 - Node.js
-- MySQL or any other database
+- MySQL (or other relational database)
 
 ## Setup
 
@@ -32,3 +30,49 @@ Ensure that the following are installed on your machine:
    ```bash
    git clone https://github.com/ALLENYL30/questionnaire-system.git
    cd questionnaire-system
+   ```
+
+2. Navigate to the `springboot` directory:
+   ```bash
+   cd springboot
+   ```
+
+3. Set up the MySQL database:
+   - Create a database named `questionnaire_db`.
+   - Configure your `application.properties` file with the correct database credentials.
+
+4. Build and run the Spring Boot application:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+### Frontend (Vue.js)
+
+1. Navigate to the `vue` directory:
+   ```bash
+   cd vue
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run serve
+   ```
+
+## Usage
+
+Once both the frontend and backend servers are running, you can access the system in your browser at `http://localhost:8080`.
+
+### Admin Features
+
+- Login to the admin panel to create and manage questionnaires.
+- View real-time responses from participants.
+
+### User Features
+
+- Participate in questionnaires.
+- View personalized results after submitting responses.
